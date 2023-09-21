@@ -4,14 +4,20 @@ import { Link } from 'react-router-dom';
 import Header2 from './Header2';
 
 const Header = () => {
+
+    const[open,setOpen]=useState(false)
   
     return (
         <div>
         <nav className='bg-white'>
          <div className='flex items-center font-medium justify-around'>
-            <div className='z-50 p-5 md:auto w-full'>
+            <div className='z-50 p-5 md:auto w-full flex justify-between'>
                 <img src={logo} alt='/' className='md:cursor-pointer '/>
+                <div className='text-3xl lg:hidden' onClick={()=>setOpen(!open)}> 
+            <ion-icon name={`${open?'close':'menu'}`}></ion-icon>
             </div>
+            </div>
+           
             {/* category menu on navber */}
 
             <ul className='md:flex hidden uppercase  items-center gap-6 font-[Pappins]'>
@@ -34,7 +40,7 @@ const Header = () => {
               </ul>
          </div>
         </nav>
-        <Header2></Header2>
+        <Header2 open={open}></Header2>
         </div>
     );
 };

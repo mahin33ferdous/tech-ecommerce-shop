@@ -12,6 +12,16 @@
         "submenu": "true"
         
        
+     },
+     {
+        "_id":3,
+        "name": "Smart Watch",
+        "submenu": "true"
+     },
+     {
+        "_id":4,
+        "name": "Accessories",
+        "submenu": "true"
      }
 
     
