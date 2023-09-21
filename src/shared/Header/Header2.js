@@ -3,11 +3,18 @@ import { Link } from 'react-router-dom';
 
 const Header2 = () => {
     const [category,setCategory]=useState([])
+    const [subCategory,setSubCategory]=useState([])
 
     useEffect(()=>{
         fetch('category.json')
         .then(res=>res.json())
         .then(data=>setCategory(data))
+    },[])
+
+    useEffect(()=>{
+        fetch('SubCategory.json')
+        .then(res=>res.json())
+        .then(data=>setSubCategory(data))
     },[])
     return (
         <div>
@@ -16,7 +23,7 @@ const Header2 = () => {
            
             {
                     category.map(c=><li
-                      key={c._id} className='hover:text-white cursor-pointer'
+                      key={c._id}  className='hover:text-white cursor-pointer'
                     >
                         {c.name}
                     </li>)
@@ -31,12 +38,30 @@ const Header2 = () => {
            <div className='cursor-pointer text-left px-3'>
             {
                     category.map(c=><li className='hover:text-primary py-7'
-                      key={c._id} 
+                    key={c._id} 
                     >
                         {c.name}
                         {
-                           <h3>apple</h3>
-                         }
+                           c.submenu  &&(
+                            <div>
+                                <ul>
+                                  
+                                {
+      subCategory.filter(
+         sub  =>
+        sub.cid === c._id
+      )
+      .map( sub => 
+        <li
+          key={sub.sid}>
+            {sub.name}
+          </li>
+      )}
+
+                                </ul>
+                            </div>
+                           )
+                        }
                     </li>)
                   
                 }

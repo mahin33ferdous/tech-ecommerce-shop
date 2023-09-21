@@ -1,0 +1,9 @@
+[
+    {"name": "Apple", "link":"/","sid":1,"cid":1},
+    {"name": "Samsung", "link":"/","sid":2,"cid":1},
+    {"name": "Google", "link":"/","sid":3,"cid":1},
+    {"name": "OPPO", "link":"/","sid":4,"cid":1},
+    {"name": "Apple", "link":"/","sid":5,"cid":2},
+    {"name": "Samsung", "link":"/","sid":6,"cid":2},
+    {"name": "Lenevo", "link":"/","sid":7,"cid":2}
+]

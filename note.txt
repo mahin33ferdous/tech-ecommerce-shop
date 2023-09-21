@@ -1,0 +1,23 @@
+// {
+    //     "_id":3,
+    //     "name":"Smart Watch",
+    //     "submenu": "true",
+    //     "sublinks": [
+    //         {"sid":3},
+    //         {"name": "Apple", "link":"/"},
+    //         {"name": "Samsung", "link":"/"}
+           
+    //     ]
+    // },
+
+    // {
+    //     "_id":4,
+    //     "name": "Accessories",
+    //     "submenu": "true",
+    //     "sublinks": [
+    //         {"sid":4},
+    //         {"name": "Power Bank", "link":"/"},
+    //         {"name": "Charger And Adapter", "link":"/"}
+            
+    //     ]
+    // }

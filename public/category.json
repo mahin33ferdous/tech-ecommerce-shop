@@ -2,47 +2,17 @@
     {
         "_id":1,
         "name": "Phone",
-        "submenu": "true",
-        "sublinks": [
-            {"name": "Apple", "link":"/"},
-            {"name": "Samsung", "link":"/"},
-            {"name": "Google", "link":"/"},
-            {"name": "OPPO", "link":"/"}
-        ]
+        "submenu": "true"
+        
     },
 
     {
         "_id":2,
         "name": "Tablets",
+        "submenu": "true"
         
-        "submenu": "true",
-        "sublinks": [
-            {"name": "Apple", "link":"/"},
-            {"name": "Samsung", "link":"/"},
-            {"name": "Lenevo", "link":"/"}
-        ]
-    },
+       
+     }
 
-    {
-        "_id":3,
-        "name":"Smart Watch",
-        "submenu": "true",
-        "sublinks": [
-            {"name": "Apple", "link":"/"},
-            {"name": "Samsung", "link":"/"}
-           
-        ]
-    },
-
-    {
-        "_id":4,
-        "name": "Accessories",
-        "submenu": "true",
-        "sublinks": [
-            {"name": "Power Bank", "link":"/"},
-            {"name": "Charger And Adapter", "link":"/"}
-            
-        ]
-    }
-
+    
 ]   
