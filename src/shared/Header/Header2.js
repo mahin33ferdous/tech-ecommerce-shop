@@ -58,12 +58,12 @@ const Header2 = ({open}) => {
         `}>
            <div className='cursor-pointer text-left px-3'>
            <li className='hover:text-primary py-7'>
-                    <Link to='/' >
+                    <Link to='/login' >
                         Login
                     </Link>
                 </li>
                 <li className='hover:text-primary py-7'>
-                    <Link to='/' >
+                    <Link to='/signup' >
                         Register
                     </Link>
                 </li>

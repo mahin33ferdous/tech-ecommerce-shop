@@ -28,12 +28,12 @@ const Header = () => {
 
                 </li>
                 <li>
-                    <Link to='/' className='py-7 px-3 inline-block'>
+                    <Link to='/login' className='py-7 px-3 inline-block'>
                         Login
                     </Link>
                 </li>
                 <li>
-                    <Link to='/' className='py-7 px-3 inline-block'>
+                    <Link to='/signup' className='py-7 px-3 inline-block'>
                         Register
                     </Link>
                 </li>
